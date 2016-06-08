@@ -34,7 +34,7 @@ include_directories(
 	common
 )
 add_executable(
-	launcher
+	launcher WIN32
     win32/common/DLLInject.cpp
     win32/common/GLWindow.cpp
     win32/common/NtCreateThreadEx.cpp

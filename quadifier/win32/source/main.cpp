@@ -51,6 +51,24 @@ void triggerStereo()
 
 //-----------------------------------------------------------------------------
 
+int main(int argc, char **argv);
+
+int APIENTRY WinMain
+(
+	_In_ HINSTANCE		hInstance,
+	_In_opt_ HINSTANCE	hPrevInstance,
+	_In_ LPTSTR			lpCmdLine,
+	_In_ int			nCmdShow
+) {
+
+	char* argv[] = {
+		"launcher.exe",
+		lpCmdLine,
+	};
+
+	return main(2, argv);
+}
+
 int main ( int argc, char **argv )
 {
     // trigger stereo mode in Windows by creating a temporary stereo window
